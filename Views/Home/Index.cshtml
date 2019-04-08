@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model NefariousDesigns.ViewModels.HomeViewModel
+
+
+<h2> @Model.Title </h2>
+
+@foreach (var shirt in Model.Shirts)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <img src="@shirt.ImageThumbnailUrl" alt="">
+                <h3 class="pull-right">@shirt.Price.ToString("c")</h3>
+                <h3>@shirt.Name</h3>
+                <p>@shirt.ShortDescription</p>
+            </div>
+        </div>
+    </div>
+}
+
