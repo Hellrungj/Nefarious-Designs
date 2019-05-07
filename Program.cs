@@ -23,7 +23,7 @@ namespace NefariousDesigns
                 var services = scope.ServiceProvider;
                 try
                 {
-                    AddDbContext context = services.GetRequiredService<AddDbContext>();
+                    AppDbContext context = services.GetRequiredService<AppDbContext>();
                     DbInitializer.Seed(context);
                 }
                 catch (Exception)

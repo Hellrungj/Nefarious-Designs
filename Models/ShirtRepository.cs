@@ -7,9 +7,9 @@ namespace NefariousDesigns.Models
 {
     public class ShirtRepository: IShirtRepository
     {
-        private readonly AddDbContext _appDbContext;
+        private readonly AppDbContext _appDbContext;
 
-        public ShirtRepository(AddDbContext appDbContext)
+        public ShirtRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
