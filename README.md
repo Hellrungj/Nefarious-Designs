@@ -1,4 +1,4 @@
-# project-alpha A.K.A Nefarious Designs
+# Nefarious Designs
 
 ## Introduction
 
